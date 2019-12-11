@@ -14,11 +14,12 @@ def shipping_manifest
   # We have 5 whale bone corsets, 2 porcelain vases and 3 oil paintings 
     the_manifest = Hash.new 
     the_manifest["whale bone corsets"] = 5
-    the_manifest["oil painting"] = 3
+    the_manifest["oil paintings"] = 3
     the_manifest["porcelain vases"] = 2
     
+    puts the_manifest
 end
-the_manifest
+
 
 def retrieval
   shipping_manifest = {
@@ -28,7 +29,7 @@ def retrieval
                  }
 
   # Look up the value of the "oil paintings" key in the shipping_manifest hash below
-puts shipping_manifest[3]
+puts shipping_manifest["oil paintings"]
 end
 
 def adding
